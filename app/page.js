@@ -40,9 +40,7 @@ export default function Home() {
       case 4:
         return (
           <div className={styles.finalScreen}>
-            <h1>Makasii yaa udah diliat sampe akhir, bahagia selalu dan selamat merayakan hari kelahiran!</h1><br><br></br>
-            <h3>Salam Hangat,</h3>
-            <h3>Ghina Salwa Fajriani</h3></br>
+            <h1>Makasii yaa udah diliat sampe akhir, bahagia selalu dan selamat merayakan hari kelahiran!</h1>
           </div>
         );
       default:
