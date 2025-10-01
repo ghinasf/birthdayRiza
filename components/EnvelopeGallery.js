@@ -51,11 +51,11 @@ const EnvelopeGallery = ({ onNext }) => {
     }
   };
 
-  // --- Daftar 22 Surat ---
+  // --- Daftar 23 Surat ---
   const letters = [
     { 
       photo: "/foto-riza-1.jpg", 
-      message: "Kak, kita mulai dari sini. Aku enggak pernah nyangka, perkenalan yang simpel ini bisa jadi salah satu anugerah terbesar di hidup aku. Kamu adalah teman yang muncul di saat aku paling butuh, bahkan tanpa perlu diminta. Jarak memang ada, tapi rasanya enggak pernah jadi penghalang. Makasii sudah jadi energi positif yang selalu aku butuhkan. Selamat ulang tahun ke-22!" 
+      message: "Kak, kita mulai dari sini. Aku enggak pernah nyangka, perkenalan yang simpel ini bisa jadi salah satu anugerah terbesar di hidup aku. Kamu adalah teman yang muncul di saat aku paling butuh, bahkan tanpa perlu diminta. Jarak memang ada, tapi rasanya enggak pernah jadi penghalang. Makasii sudah jadi energi positif yang selalu aku butuhkan. Selamat ulang tahun ke-23!" 
     },
     { 
       photo: "/foto-riza-2.jpg", 
@@ -71,7 +71,7 @@ const EnvelopeGallery = ({ onNext }) => {
     },
     { 
       photo: "/foto-riza-5.jpg", 
-      message: "Aku kagum sama semangat pantang menyerah kamu. Kalau kamu lagi punya goal, kamu selalu berusaha keras sampai berhasil. Itu salah satu hal yang paling menginspirasi aku. Semoga di usia 22 ini, semangatnya makin membara dan kamu bisa meraih semua mimpi besar kamu." 
+      message: "Aku kagum sama semangat pantang menyerah kamu. Kalau kamu lagi punya goal, kamu selalu berusaha keras sampai berhasil. Itu salah satu hal yang paling menginspirasi aku. Semoga di usia 23 ini, semangatnya makin membara dan kamu bisa meraih semua mimpi besar kamu." 
     },
     { 
       photo: "/foto-riza-6.jpg", 
@@ -91,7 +91,7 @@ const EnvelopeGallery = ({ onNext }) => {
     },
     { 
       photo: "/foto-riza-10.jpg", 
-      message: "Kamu punya kualitas langka, kamu bisa menjadi pribadi yang dewasa dan bijak, tapi juga punya selera humor yang receh dan menyenangkan. Itu membuat kamu seimbang dan nyaman untuk diajak bicara. Di usia 22 ini, teruslah asah kualitas-kualitas hebat itu. Aku bangga jadi teman kamu." 
+      message: "Kamu punya kualitas langka, kamu bisa menjadi pribadi yang dewasa dan bijak, tapi juga punya selera humor yang receh dan menyenangkan. Itu membuat kamu seimbang dan nyaman untuk diajak bicara. Di usia 23 ini, teruslah asah kualitas-kualitas hebat itu. Aku bangga jadi teman kamu." 
     },
     { 
       photo: "/foto-riza-11.jpg", 
@@ -99,7 +99,7 @@ const EnvelopeGallery = ({ onNext }) => {
     },
     { 
       photo: "/foto-riza-12.jpg", 
-      message: "Semoga di usia 22 tahun ini, pintu-pintu kesempatan baru terbuka lebar buat kamu. Semoga kamu bertemu orang-orang yang mendukung kamu dan membawa kamu ke level yang lebih tinggi. You deserve the world!" 
+      message: "Semoga di usia 23 tahun ini, pintu-pintu kesempatan baru terbuka lebar buat kamu. Semoga kamu bertemu orang-orang yang mendukung kamu dan membawa kamu ke level yang lebih tinggi. You deserve the world!" 
     },
     { 
       photo: "/foto-riza-13.jpg", 
@@ -111,7 +111,7 @@ const EnvelopeGallery = ({ onNext }) => {
     },
     { 
       photo: "/foto-riza-15.jpg", 
-      message: "Di hari ulang tahun kamu ini, aku cuma mau bilang terima kasih. Terima kasih untuk kehadiran kamu yang membuat hari-hari aku lebih ceria. Aku harap kamu benar-benar menikmati momen-momen indah di usia 22 ini, karena kamu pantas mendapatkan semua kebahagiaan itu." 
+      message: "Di hari ulang tahun kamu ini, aku cuma mau bilang terima kasih. Terima kasih untuk kehadiran kamu yang membuat hari-hari aku lebih ceria. Aku harap kamu benar-benar menikmati momen-momen indah di usia 23 ini, karena kamu pantas mendapatkan semua kebahagiaan itu." 
     },
     { 
       photo: "/foto-riza-16.jpg", 
@@ -139,7 +139,11 @@ const EnvelopeGallery = ({ onNext }) => {
     },
     { 
       photo: "/foto-riza-22.jpg", 
-      message: "Ini adalah surat penutup, dan aku harap kamu membacanya. Kamu tahu kan backsound ini dari instrumen lagu apa? yapss ini dari lagu yang berjudul sempurna yang di nyanyikan oleh Andra and The Backbone. Aku berdoa, semoga seluruh aspek kehidupan kamu, mulai dari karir, cinta, kesehatan, dan kebahagiaan, menjadi 'Sempurna' seperti judul lagu Andra and The Backbone yang lagi kamu dengar ini. Kamu sudah sempurna sebagai teman, sekarang raih kesempurnaan dalam hidup kamu. Selamat ulang tahun ke-22, Riza Nursyah" 
+      message: "Selamat datang di usia 23, Kakakk! Aku tahu, banyak hal luar biasa yang menanti kamu di tahun ini. Semoga langkah kamu selalu ringan, setiap kesulitan menjadi pelajaran, dan setiap usaha kamu berbuah manis. Teruslah kejar impian kamu tanpa rasa takut. Aku bangga sekali melihat kamu tumbuh menjadi orang yang luar biasa." 
+    },
+    { 
+      photo: "/foto-riza-23.jpg", 
+      message: "Ini adalah surat penutup, dan aku harap kamu membacanya. Kamu tahu kan backsound ini dari instrumen lagu apa? yapss ini dari lagu yang berjudul sempurna yang di nyanyikan oleh Andra and The Backbone. Aku berdoa, semoga seluruh aspek kehidupan kamu, mulai dari karir, cinta, kesehatan, dan kebahagiaan, menjadi 'Sempurna' seperti judul lagu Andra and The Backbone yang lagi kamu dengar ini. Kamu sudah sempurna sebagai teman, sekarang raih kesempurnaan dalam hidup kamu. Selamat ulang tahun ke-23, Riza Nursyah" 
     },
   ];
   // --- Akhir Daftar Surat ---
@@ -147,7 +151,7 @@ const EnvelopeGallery = ({ onNext }) => {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Ini adalah 22 Amplop Spesial untuk 22 Tahun Kamu!</h2>
+      <h2 className={styles.title}>Ini adalah 23 Amplop Spesial untuk 23 Tahun Kamu!</h2>
       <div className={styles.envelopeGrid}>
         {letters.map((letter, index) => (
           <Envelope 
@@ -158,9 +162,9 @@ const EnvelopeGallery = ({ onNext }) => {
           />
         ))}
       </div>
-      {openedCount >= 22 && ( // Tampilkan tombol Finish jika 22 amplop sudah dibuka
+      {openedCount >= 23 && ( // Tampilkan tombol Finish jika 23 amplop sudah dibuka
         <button onClick={onNext} className={styles.nextButton}>
-          Finish
+          Selesai, eh tapi coba pencet lagi
         </button>
       )}
     </div>
