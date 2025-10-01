@@ -1,0 +1,125 @@
+/* Container untuk seluruh komponen kado */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 80vh; /* Agar komponen berada di tengah layar */
+  transition: all 0.5s ease-in-out;
+}
+
+/* Styling untuk kado saat masih tertutup */
+.closedKado {
+  width: 250px;
+  height: 250px;
+  background: #a9a9a9; /* Warna abu-abu metalik */
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  animation: pulse 2s infinite; /* Efek berdenyut untuk menarik perhatian */
+}
+
+/* Pita kado vertikal */
+.closedKado::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  background: #ffd700; /* Warna emas */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Pita kado horizontal */
+.closedKado::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background: #ffd700; /* Warna emas */
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Tombol atau teks 'Klik untuk Buka' */
+.closedKado h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #0d0d0d;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+/* Efek saat kado di-hover */
+.closedKado:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Animasi berdenyut */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+/* Styling untuk kado yang sudah terbuka */
+.openKado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeInScale 1s forwards;
+}
+
+/* Animasi muncul dan membesar */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Pesan di bawah kue */
+.message {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #ffd700;
+}
+
+/* Styling untuk tombol Next */
+.nextButton {
+  margin-top: 1.5rem;
+  padding: 10px 25px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.nextButton:hover {
+  background-color: #ffd700; /* Warna emas */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,144 @@
+/* components/EnvelopeGallery.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Ubah ke flex-start agar konten dari atas */
+  min-height: auto; 
+  padding: 2rem;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+}
+
+.envelopeGrid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem; /* Kurangi gap agar lebih banyak muat */
+  flex-wrap: wrap;
+  max-width: 1200px; /* Batasi lebar grid agar amplop tidak terlalu melebar */
+}
+
+/* --- Styling Amplop --- */
+/* Pastikan .envelopeContainer memiliki lebar yang tetap agar 22 item bisa tertata */
+.envelopeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px; /* Sedikit perkecil agar 5 amplop bisa muat di layar lebar */
+  min-height: 150px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.closedEnvelope {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.flap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background-color: #d8d8d8;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: top;
+}
+
+.closedEnvelope:hover .flap {
+  transform: rotateX(180deg);
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+
+.label {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: #555;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.openEnvelope {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo {
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.message {
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.closeButton {
+  background-color: #d8d8d8;
+  color: #333;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.closeButton:hover {
+  background-color: #c0c0c0;
+}
+
+.nextButton {
+  margin-top: 2rem;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  animation: bounceIn 1.5s ease-in-out;
+}
+.nextButton:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}

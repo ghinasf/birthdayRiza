@@ -1,0 +1,83 @@
+/* Container untuk seluruh halaman Slide 1 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  transition: opacity 1s ease-in-out;
+}
+
+/* Styling untuk teks "Are You Ready?" */
+.text {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Styling untuk tombol "Start" */
+.button {
+  margin-top: 2rem;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  animation: bounceIn 1.5s ease-in-out;
+}
+
+/* Efek saat tombol di-hover */
+.button:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
+/* Animasi untuk teks */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animasi untuk tombol */
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}

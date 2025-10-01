@@ -1,0 +1,90 @@
+/* components/Envelope.module.css */
+.envelopeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 150px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.closedEnvelope {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.flap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background-color: #d8d8d8;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: top;
+}
+
+.closedEnvelope:hover .flap {
+  transform: rotateX(180deg);
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+
+.label {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: #555;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.openEnvelope {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease;
+  transform: scale(1.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message {
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.closeButton {
+  background-color: #d8d8d8;
+  color: #333;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.closeButton:hover {
+  background-color: #c0c0c0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1.1); }
+}
