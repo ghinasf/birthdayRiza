@@ -5,8 +5,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: "Happy Birthday, Riza!",
-  description: "Sebuah website sederhana untuk merayakan ulang tahun Riza. Dibuat dengan Next.js dan Vercel.",
+  title: "Something from Ghina!"
 };
 
 export default function RootLayout({ children }) {
